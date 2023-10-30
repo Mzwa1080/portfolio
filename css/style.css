@@ -46,7 +46,10 @@ body {
     text-align: center;
     box-shadow: .1vw .1vw .1vw .1vw;
 }
-
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
 h2 {
     font-size: 40px;
     font-weight: bold;
@@ -58,6 +61,7 @@ h2 {
     color: #fff;
 
 }
+
 
 #Education {
     height: 300px;
@@ -77,4 +81,9 @@ h2 {
 
 #skills {
     height: 400px;
+}
+.foooter{
+    height: 50px;
+    font-size: 40px;
+    background-image: linear-gradient(to right, lightgrey, silver);
 }
