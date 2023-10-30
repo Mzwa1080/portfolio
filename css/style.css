@@ -1,0 +1,32 @@
+*,
+::after,
+::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+body{
+    background-color: navy;
+    font-family: 'Roboto', sans-serif;
+}
+
+.imaage{
+    background-image: url("../img/backimg.jpg");
+}
+.main-section{
+    background-image: url("../img/backimg.jpg");
+    width: auto;
+    height: 200px;
+}
+
+
+.nav1{
+    margin-inline: 20em;
+}
+#myButton{
+    background-color: transparent;
+    border-radius: 4rem;
+}
