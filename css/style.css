@@ -1,21 +1,22 @@
 *,
 ::after,
-::before{
+::before {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
-body{
+body {
     /* background-color: blue; */
     font-family: 'Roboto', sans-serif;
     color: #023047;
 
 }
-.background-image-wrapper{
+
+.background-image-wrapper {
     background-image: url("../img/backimg.jpg");
     height: 150vh;
     background-repeat: no-repeat;
@@ -23,51 +24,57 @@ body{
     object-position: center;
 }
 
-.imaage{
+.imaage {
     /* position: sticky;
     top: 0; */
     box-shadow: .6vw .4vw .4vw .3vw;
     /* margin: ; */
-     color: #ffb703;
+    color: #ffb703;
 
 }
-.description{
+
+.description {
     margin-top: 150px;
     color: #023047;
 }
 
 
-#myButton{
+#myButton {
     background-color: transparent;
     border-radius: 4rem;
     padding-inline: .3em;
     text-align: center;
-    box-shadow: .1vw .1vw .1vw .1vw ;
+    box-shadow: .1vw .1vw .1vw .1vw;
 }
 
-h2{
+h2 {
     font-size: 40px;
     font-weight: bold;
+    text-align: center;
 }
 
-:is(#Education, #skills){
+:is(#Education, #skills) {
     background-image: linear-gradient(180deg, blue, #ffb703);
     color: #fff;
 
 }
 
-#Education{
-    height:300px ;
+#Education {
+    height: 300px;
 }
-.edu-description{
+
+.edu-description {
     font-style: italic;
 }
-.project-buttons1{
-float: left;
+
+.project-buttons1 {
+    float: left;
 }
-.project-buttons2{
-   float: right; 
+
+.project-buttons2 {
+    float: right;
 }
-#skills{
-height: auto;
+
+#skills {
+    height: 400px;
 }
