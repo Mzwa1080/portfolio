@@ -68,6 +68,11 @@ h2 {
 #Education {
     height: 300px;
 }
+@media screen and (width < 424px) {
+    #Education{
+        height: 400px;
+    }
+}
 
 .edu-description {
     font-style: italic;
