@@ -73,6 +73,16 @@ h2 {
         height: 400px;
     }
 }
+@media screen and (width < 1444px) {
+    .LandingNames{
+        color: #ffb703;
+    }
+}
+@media screen and (width < 1040px){
+    .LandingNames{
+        color: #ffb703;
+    }
+}
 
 .edu-description {
     font-style: italic;
