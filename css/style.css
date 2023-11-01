@@ -58,7 +58,7 @@ h2 {
     text-align: center;
 }
 
-:is(#Education, #skills, #contact) {
+:is(#Education, #projects, #contact) {
     background-image: linear-gradient(180deg, blue, #ffb703);
     color: #fff;
 
@@ -68,21 +68,31 @@ h2 {
 #Education {
     height: 300px;
 }
-@media screen and (width < 424px) {
+@media screen and (300px < width < 424px) {
     #Education{
         height: 400px;
+    }
+    .mycards{
+        width: 16rem;
+    }
+
+}
+@media  screen and (width > 425px ) {
+    .mycards{
+        width: 20rem;
     }
 }
 @media screen and (width < 1444px) {
     .LandingNames{
         color: #ffb703;
+        
     }
-}
-@media screen and (width < 1040px){
-    .LandingNames{
+    h1{
+        font-size: medium;
         color: #ffb703;
     }
 }
+
 
 .edu-description {
     font-style: italic;
