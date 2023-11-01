@@ -20,11 +20,13 @@ body {
 
 .background-image-wrapper {
     background-image: url("../img/backimg.jpg");
-    height: 150vh;
+    height: 120vh;
     background-repeat: no-repeat;
     object-fit: cover;
     object-position: center;
 }
+
+
 
 .imaage {
     /* position: sticky;
@@ -43,7 +45,7 @@ body {
 
 #myButton {
     background-color: transparent;
-    border-radius: 4rem;
+    border-radius: .4rem;
     padding-inline: .3em;
     text-align: center;
     box-shadow: .1vw .1vw .1vw .1vw;
@@ -75,7 +77,16 @@ h2 {
     .mycards{
         width: 16rem;
     }
-
+}
+@media  screen and ( width < 900px ) {
+    .navItems{
+        box-shadow: .5vw .2vw #ffb703 ;
+        color: #ffb703;
+    }
+    #myButton {
+        height: 2rem;
+        width: 8.5rem;
+    }
 }
 @media  screen and (width > 425px ) {
     .mycards{
@@ -110,6 +121,6 @@ h2 {
     height: 400px;
 }
 .foooter{
-    font-size: 40px;
+    font-size: 20px;
     background-image: linear-gradient(to right, lightgrey, silver);
 }
