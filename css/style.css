@@ -55,9 +55,16 @@ h1{
     font-weight: bold;
 }
 h2 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
+}
+.aspiring-dev{
+    font-size: 20px;
+}
+.about, #education, .skills, .projects, .testimonials  {
+    font-size: 40px;
+    text-decoration: underline;
 }
 
 :is(#Education, #projects, #contact) {
@@ -111,7 +118,9 @@ h2 {
         width: 20rem;
     }
 }
-
+.myTestimonialcards{
+    height: 40rem;
+}
 
 .edu-description {
     font-style: italic;
@@ -126,8 +135,14 @@ h2 {
 }
 
 #skills {
-    height: 400px;
+    height: auto;
+
 }
+.skills-description{
+    font-style: italic;
+    font-size: smaller;
+}
+
 .foooter{
     font-size: 20px;
     background-image: linear-gradient(to right, lightgrey, silver);
