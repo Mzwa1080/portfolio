@@ -22,7 +22,7 @@ body {
     background-image: url("../img/backimg.jpg");
     height: 120vh;
     background-repeat: no-repeat;
-    object-fit: cover;
+    object-fit: fill;
     object-position: center;
 }
 
@@ -70,12 +70,13 @@ h2 {
 #Education {
     height: 300px;
 }
-@media screen and (300px < width < 424px) {
-    #Education{
-        height: 400px;
+@media screen and (width < 1444px) {
+    .LandingNames{
+        color: #ffb703;
+        
     }
-    .mycards{
-        width: 16rem;
+    h1{
+        color: #ffb703;
     }
 }
 @media  screen and ( width < 900px ) {
@@ -86,21 +87,28 @@ h2 {
     #myButton {
         height: 2rem;
         width: 8.5rem;
+        color: transparent;
+    }
+}
+@media screen and ( width > 992px) {
+    .navItems{
+        color: black;
+    }
+}
+@media screen and (300px < width < 424px) {
+    #Education{
+        height: 400px;
+    }
+    .mycards{
+        width: 16rem;
+    }
+    .controllingTheCards{
+        text-align: center;
     }
 }
 @media  screen and (width > 425px ) {
     .mycards{
         width: 20rem;
-    }
-}
-@media screen and (width < 1444px) {
-    .LandingNames{
-        color: #ffb703;
-        
-    }
-    h1{
-        font-size: medium;
-        color: #ffb703;
     }
 }
 
