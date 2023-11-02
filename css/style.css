@@ -26,8 +26,6 @@ body {
     object-position: center;
 }
 
-
-
 .imaage {
     /* position: sticky;
     top: 0; */
@@ -41,7 +39,6 @@ body {
     margin-top: 150px;
     color: #023047;
 }
-
 
 #myButton {
     background-color: transparent;
@@ -62,7 +59,7 @@ h2 {
 .aspiring-dev{
     font-size: 20px;
 }
-.about, #education, .skills, .projects, .testimonials  {
+.about, #education, .skills, .projects, .testimonials, .contact {
     font-size: 40px;
     text-decoration: underline;
 }
@@ -72,7 +69,6 @@ h2 {
     color: #fff;
 
 }
-
 
 #Education {
     height: 300px;
@@ -102,7 +98,7 @@ h2 {
         color: black;
     }
 }
-@media screen and (300px < width < 424px) {
+@media screen and (250px < width < 424px) {
     #Education{
         height: 400px;
     }
@@ -115,11 +111,16 @@ h2 {
 }
 @media  screen and (width > 425px ) {
     .mycards{
-        width: 20rem;
+        width: 16rem;
     }
 }
+
 .myTestimonialcards{
-    height: 40rem;
+    height: 30.5rem;
+}
+.testimonialDescription{
+    font-size: .65rem;
+    font-weight: bold;
 }
 
 .edu-description {
@@ -129,18 +130,25 @@ h2 {
 .project-buttons1 {
     float: left;
 }
-
 .project-buttons2 {
     float: right;
 }
 
 #skills {
     height: auto;
-
 }
 .skills-description{
     font-style: italic;
     font-size: smaller;
+}
+a {
+    text-decoration: none;
+}
+.mentor-description{
+    font-style: italic;
+}
+.testimonial-title{
+    color: #023047;
 }
 
 .foooter{
