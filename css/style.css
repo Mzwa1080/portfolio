@@ -73,7 +73,13 @@ h2 {
 #Education {
     height: 300px;
 }
-@media screen and (width < 1444px) {
+.projects-btn{
+    color: #ffb703;
+    border-radius: 1rem;
+    border: 1px solid #023047;
+    background-color: #023047;
+}
+@media screen and (width < 1800px) {
     .LandingNames{
         color: #ffb703;
         
@@ -102,6 +108,9 @@ h2 {
     #Education{
         height: 400px;
     }
+    #hide-academy{
+        display: none;
+    }
     .mycards{
         width: 16rem;
     }
@@ -113,6 +122,11 @@ h2 {
     .mycards{
         width: 16rem;
     }
+}
+
+.mycards{
+    box-shadow: .2vw .4vw .5vw .1vw;
+
 }
 
 .myTestimonialcards{
@@ -127,10 +141,10 @@ h2 {
     font-style: italic;
 }
 
-.project-buttons1 {
+.btn1 {
     float: left;
 }
-.project-buttons2 {
+.btn2 {
     float: right;
 }
 
