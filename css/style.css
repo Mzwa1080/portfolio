@@ -75,7 +75,7 @@ h2 {
 }
 .projects-btn{
     color: #ffb703;
-    border-radius: 1rem;
+    border-radius: .4   rem;
     border: 1px solid #023047;
     background-color: #023047;
 }
@@ -89,17 +89,46 @@ h2 {
     }
 
 }
-@media screen and (width < 768px) {
+
+@media screen and (width < 370px) {
+
+}
+
+@media screen and (width =700px) {
     .mycards {
         margin-left: 25%;
     }
+
     
 }
-@media screen and (width < 550px) {
-    .mycards{
-        margin-left: 15%;
+@media screen and (width<700px) {
+    .timelinee-content{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (width = 300px) {
+    .timelinee-content{
+        font-size: .8rem;
+        font-weight: bold;
+    }
+    .skils-description{
+        font-size: .6rem;
+    }
+    .skills-month{
+        font-size: .4rem;
     }
 }
+
+
+@media screen and (width>768px) {
+    .mycards2{
+        margin-left: 5%;
+    }
+}
+
 @media  screen and ( width < 900px ) {
     .navItems{
         box-shadow: .5vw .2vw #ffb703 ;
@@ -305,8 +334,11 @@ a {
     }
   }
   
-  .gradient-custom, .gradient-custom-4 {  
+  .gradient-custom {  
     background: linear-gradient(to right, blue, gold );
+  }
+  .gradient-custom-4{
+    background: linear-gradient(to right, gold , blue);
   }
   
  
