@@ -59,7 +59,7 @@ h2 {
 .aspiring-dev{
     font-size: 20px;
 }
-.about, #education, .skills, .projects, .testimonials, .contact {
+:is(.about, #education, .skills, .projects, .testimonials, .contact) {
     font-size: 40px;
     text-decoration: underline;
 }
@@ -87,6 +87,18 @@ h2 {
     h1{
         color: #ffb703;
     }
+
+}
+@media screen and (width < 768px) {
+    .mycards {
+        margin-left: 25%;
+    }
+    
+}
+@media screen and (width < 550px) {
+    .mycards{
+        margin-left: 15%;
+    }
 }
 @media  screen and ( width < 900px ) {
     .navItems{
@@ -112,11 +124,9 @@ h2 {
         display: none;
     }
     .mycards{
-        width: 16rem;
+        width: 14rem;
     }
-    .controllingTheCards{
-        text-align: center;
-    }
+
 }
 @media  screen and (width > 425px ) {
     .mycards{
@@ -147,6 +157,10 @@ h2 {
 .btn2 {
     float: right;
 }
+.btn-submiit{
+    background-color: #023047;
+    color: #ffb703;
+}
 
 #skills {
     height: auto;
@@ -155,6 +169,7 @@ h2 {
     font-style: italic;
     font-size: smaller;
 }
+
 a {
     text-decoration: none;
 }
@@ -169,3 +184,129 @@ a {
     font-size: 20px;
     background-image: linear-gradient(to right, lightgrey, silver);
 }
+
+
+
+/* ----------------------------- MATERIAL DESIGN BOOTSTRAP ------ */
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-4 {
+    position: relative;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .main-timeline-4::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background-color: #bbb;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .timeline-4 {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .timeline-4::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -11px;
+    background-color: #bbb;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left-4 {
+    padding: 0px 40px 20px 0px;
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .right-4 {
+    padding: 0px 0px 20px 40px;
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left-4::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgba(37, 117, 252, 1);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgba(37, 117, 252, 1);
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right-4::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid blue;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent blue transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right-4::after {
+    left: -14px;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .main-timeline-4::after {
+      left: 31px;
+    }
+  
+    /* Full-width containers */
+    .timeline-4 {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+    /* Make sure that all arrows are pointing leftwards */
+    .timeline-4::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left-4::after,
+    .right-4::after {
+      left: 18px;
+    }
+  
+    .left-4::before {
+      right: auto;
+    }
+  
+    /* Make all right containers behave like the left ones */
+    .right-4 {
+      left: 0%;
+    }
+  }
+  
+  .gradient-custom, .gradient-custom-4 {  
+    background: linear-gradient(to right, blue, gold );
+  }
+  
+ 
